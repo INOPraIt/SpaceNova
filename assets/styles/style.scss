@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Poppins:wght@600&family=Roboto:wght@300&display=swap');
+
+
+.conatinerHome {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/backgroundOne.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .containerGeneral {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100vh;
+
+    .itemOne {
+      background-color: rgba(255, 0, 0, 0);
+      .blockOrange {
+        width: 170px;
+        height: 100px;
+        border-radius: 0 0 5px 5px;
+        background-color: rgb(255, 64, 0);
+        margin-left: 26%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .textSpaceNovaStudio {
+          text-align: center;
+          font-size: 20px;
+          font-family: 'AR One Sans', sans-serif;
+          color: white;
+        }
+      }
+
+      .btnOne {
+        background-color: rgb(115, 54, 231);
+        width: 170px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 5px;
+        margin-left: 26%;
+        margin-top: 80px;
+
+        .btnAbout {
+          font-family: 'AR One Sans', sans-serif;
+          font-size: 15px;
+          color: white;
+        }
+      }
+
+      .btnTwo {
+        background-color: rgba(0, 247, 255, 0);
+        width: 170px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(0, 247, 255);
+        border-radius: 5px;
+        margin-left: 26%;
+        margin-top: 20px;
+
+        .btnProjects {
+          font-family: 'AR One Sans', sans-serif;
+          font-size: 15px;
+          color: rgb(0, 247, 255);
+        }
+      }
+
+      .customText {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 247, 255);
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 150px;
+        margin-left: 26%;
+      }
+
+      .webText {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 10px;
+        margin-left: 26%;
+      }
+
+      .demoForm {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(144, 144, 144);
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 26%;
+      }
+    }
+
+    .itemTwo {
+      background-color: rgba(255, 0, 0, 0);
+      display: flex;
+
+      .leftHandBlock {
+        margin-left: 7%;
+        margin-top: 1vh;
+        z-index: 1;
+
+        .leftHand {
+          margin-top: 28vh;
+          margin-left: 7%;
+        }
+      }
+
+      .rightHandBlock {
+        margin-left: -1%;
+        margin-top: -15vh;
+        z-index: 1;
+
+        .rightHand {
+          margin-top: 28vh;
+          margin-left: 0%;
+          transform: rotate(5deg);
+        }
+      }
+
+      .blockBetween {
+        background-color: red;
+        height: 100vh;
+        max-width: 820px;
+        width: 800px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mySwiper {
+          width: 90%;
+          height: 100vh;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
